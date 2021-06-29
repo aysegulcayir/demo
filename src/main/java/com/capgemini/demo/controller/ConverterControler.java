@@ -19,12 +19,12 @@ public class ConverterControler {
 
 
         if (c==null ){
-            Message message = new Message(" the coverted value is "+Util.toCelcius(f));
+            Message message = new Message(" the coverted value is: "+Util.toCelcius(f));
             return new ResponseEntity<>( message, HttpStatus.OK);
 
         }
         if(f==null){
-            Message message = new Message(" the coverted value is "+Util.toCelcius(c));
+            Message message = new Message(" the coverted value is: "+Util.toCelcius(c));
             return new ResponseEntity<>( message, HttpStatus.OK);
         }
 
