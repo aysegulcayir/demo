@@ -1,0 +1,23 @@
+<html>
+
+    <body>
+
+        <form method="GET" action="http://localhost:8080/api/convert">
+
+            <div>
+                <!-- for every input type (except 'submit), 'the 'name' attribute will be in the url as a requestparameter-->
+                <label for="celcius">Celcius: </label><input type="text" id="celcius" name="celcius">
+            </div>
+
+            <div>
+                <label for="fahrenheit">Fahrenheit: </label><input type="text" id="fahrenheit" name="fahrenheit">
+            </div>
+
+            <!-- this will effectively perform a GET request to 'http://localhost:8080/api/convert' -->
+            <input type="submit" value="convert">
+
+        </form>
+
+    </body>
+
+</html>
